@@ -5,17 +5,17 @@ const NavBar = () => {
         
     <div id="navbar">
         <div className="brand">
-        <img src="/img/carro.png" alt="logo bebida" />
+        <img src="/img/icon.png" alt="logo marca" />
         </div>
         <ul>
             <li>
-                <a href="">Energizantes</a>
+                <a href="#">Energizantes</a>
             </li>
             <li>
-                <a href="">Con azúcar</a>
+                <a href="#">Con azúcar</a>
             </li>
             <li>
-                <a href="">Sin azúcar</a>
+                <a href="#">Sin azúcar</a>
         </li>
         </ul>
     <CartWidget />
