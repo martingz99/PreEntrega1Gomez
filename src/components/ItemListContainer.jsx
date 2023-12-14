@@ -1,8 +1,9 @@
-const ItemListContainer = ({saludo}) => {
+const ItemListContainer = ({saludo, children}) => {
 
     return(
         <div>
             <h3 className="saludo energi">{saludo}</h3>
+            {children}
         </div>
     )
 }

@@ -1,5 +1,8 @@
 import ItemListContainer from "./components/ItemListContainer"
 import NavBar from "./components/NavBar"
+import EjemploContador from "./components/Ejemplos/EjemploContador"
+import EjemploChildren from "./components/Ejemplos/EjemploChildren"
+
 import './App.css'
 
 function App() {
@@ -17,8 +20,9 @@ function App() {
       <div id='app'>
         <NavBar />
         
-        <ItemListContainer className saludo="Los mejores energizantes"/>
-          <div className="energi">
+        <ItemListContainer className saludo="Los mejores energizantes">
+        
+        <div className="energi">
             <img src="/img/anana.jpg" alt="" />
             <img src="/img/mango.jpg" alt="" />
             <img src="/img/paradise.png" alt="" />
@@ -29,6 +33,9 @@ function App() {
             <img src="/img/lewis.avif" alt="" />
             <img src="/img/pomelo.jpg" alt="" /> 
           </div>
+        </ItemListContainer>
+        <EjemploChildren/>
+        <EjemploContador/>
         </div>
     </>
   )
