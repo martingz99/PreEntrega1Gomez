@@ -1,11 +1,10 @@
 import { useState } from "react"
 const EjemploContador = () => {
 
-    let contador = 0;
+    const [ contador, setContador ] = useState(0) 
 
     const aumentar = () => {
-        console.log("clickeamos el boton", contador)
-        contador++
+        setContador(contador + 1)
     }
 
     return(
