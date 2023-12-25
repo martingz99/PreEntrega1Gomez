@@ -21,21 +21,10 @@ function App() {
         <NavBar />
         
         <ItemListContainer className saludo="Los mejores energizantes">
-        
-        <div className="energi">
-            <img src="/img/anana.jpg" alt="" />
-            <img src="/img/mango.jpg" alt="" />
-            <img src="/img/paradise.png" alt="" />
-            <img src="/img/white.png" alt="" />
-            <img src="/img/sandiia.jpg" alt="" />
-            <img src="/img/black.jpg" alt="" />
-            <img src="/img/cele.jpeg" alt="" />
-            <img src="/img/lewis.avif" alt="" />
-            <img src="/img/pomelo.jpg" alt="" /> 
-          </div>
+          
         </ItemListContainer>
-        <EjemploChildren/>
-        <EjemploContador/>
+        {/* <EjemploChildren/> */}
+        {/* <EjemploContador/> */}
         </div>
     </>
   )

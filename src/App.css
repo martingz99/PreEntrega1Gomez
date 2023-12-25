@@ -42,7 +42,6 @@
   color: white;
   margin: 0 10px; 
   padding: 0 15px;
-  
 }
 
 ul li {
@@ -83,6 +82,40 @@ ul li a:hover{
   text-align: center;
 }
 
+.energi{
+  margin: 5px;
+  width: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
 .energi img {
+  margin-left: 60px;
   width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.price{
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+.buttons{
+  background: rgb(146, 146, 146);
+  display: flex;
+  justify-content: space-around;
+}
+
+.button1{
+  background: rgb(197, 197, 197);
+  color: rgb(0, 0, 0);
+  border-radius: 3px;
+}
+
+.button1:hover{
+  background: rgb(3, 79, 165);
 }
