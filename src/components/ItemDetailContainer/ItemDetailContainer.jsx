@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react"
 import obtenerProductos from "../utilidades/data"
 import ItemDetail from "../ItemDetail/ItemDetail"
+import { useParams } from "react-router-dom"
 
 const ItemDetailContainer = () => {
 
-    const [producto, setProducto] = useState ()
+    const [producto, setProducto] = useState ({})
+    const { id } = useParams ()
 
     useEffect(()=>{
         obtenerProductos
-        .then((respuesta)=>{
-            const productoEncontrado = respuesta.find( (prod)=> prod.id === "asd126")
+        .then((respuesta)=> {
+            const productoEncontrado = respuesta.find( (prod)=> prod.id === id)
             setProducto(productoEncontrado)
         })
 
@@ -17,7 +19,7 @@ const ItemDetailContainer = () => {
 
     return (
     <div>
-        <ItemDetail producto={producto} />
+        <ItemDetail producto={ producto } />
     </div>
 )
 }

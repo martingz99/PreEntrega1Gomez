@@ -6,6 +6,7 @@ const productos = [
         stock: 19,
         precio: "$ 1,100",
         imagen: "/img/anana.jpg",
+        categoria: "conazucar",
     },
     {
         id: "asd124",
@@ -14,6 +15,7 @@ const productos = [
         stock: 12,
         precio: "$ 1,100",
         imagen:"/img/mango.jpg",
+        categoria:"conazucar",
     },
     {
         id: "asd125",
@@ -22,6 +24,7 @@ const productos = [
         stock: 16,
         precio: "$ 1,100",
         imagen:"/img/paradise.png",
+        categoria:"sinazucar",
     },
     {
         id: "asd13",
@@ -30,6 +33,7 @@ const productos = [
         stock: 10,
         precio: "$ 1,100",
         imagen: "/img/white.png",
+        categoria:"sinazucar",
     },
     {
         id: "asd133",
@@ -38,6 +42,7 @@ const productos = [
         stock: 9,
         precio: "$ 1,100",
         imagen:"/img/sandiia.jpg",
+        categoria:"sinazucar",
     },
     {
         id: "asd113",
@@ -46,6 +51,7 @@ const productos = [
         stock: 29,
         precio: "$ 1,100",
         imagen:"/img/black.jpg",
+        categoria:"conazucar",
     },
     {
         id: "asd126",
@@ -54,6 +60,7 @@ const productos = [
         stock: 10,
         precio: "$ 1,100",
         imagen:"/img/cele.jpeg",
+        categoria:"sinazucar",
     },
     {
         id: "asd136",
@@ -62,6 +69,7 @@ const productos = [
         stock: 19,
         precio: "$ 1,100",
         imagen:"/img/lewis.avif",
+        categoria:"conazucar",
     },
     {
         id: "asd163",
@@ -70,6 +78,7 @@ const productos = [
         stock: 8,
         precio: "$ 1,100",
         imagen:"/img/pomelo.jpg",
+        categoria:"conazucar",
     },
     {
         id: "asd223",
@@ -78,6 +87,7 @@ const productos = [
         stock: "sin stock",
         precio: "$ 1,100",
         imagen:"/img/golden.avif",
+        categoria:"conazucar",
     },
 ];
 
