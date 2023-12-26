@@ -1,20 +1,15 @@
-import ItemListContainer from "./components/ItemListContainer"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import NavBar from "./components/NavBar"
-import EjemploContador from "./components/Ejemplos/EjemploContador"
-import EjemploChildren from "./components/Ejemplos/EjemploChildren"
+import obtenerProductos from "./components/utilidades/data"
 
 import './App.css'
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
+
 
 function App() {
 
-  /* const comprar = "comprado"
-  const compraste = ()=>{
-    alert("Compraste un monster")
-  } */
+  
 
-
-
-  //seguir con la grilla de los monster y chequear si esta todo para la entrega
   return (
     <>
       <div id='app'>
@@ -23,8 +18,9 @@ function App() {
         <ItemListContainer className saludo="Los mejores energizantes">
           
         </ItemListContainer>
-        {/* <EjemploChildren/> */}
-        {/* <EjemploContador/> */}
+
+        <ItemDetailContainer />
+
         </div>
     </>
   )

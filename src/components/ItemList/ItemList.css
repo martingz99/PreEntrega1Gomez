@@ -1,0 +1,8 @@
+.item-list{
+    margin: 5px;
+    width: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    margin-left: 150px;
+}
