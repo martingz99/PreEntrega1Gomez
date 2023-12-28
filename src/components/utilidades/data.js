@@ -5,7 +5,7 @@ const productos = [
         descripcion: "Sabor piña",
         stock: 19,
         precio: "$ 1,100",
-        imagen: "/img/anana.jpg",
+        imagen: "/img/anana.png",
         categoria: "conazucar",
     },
     {
@@ -14,7 +14,7 @@ const productos = [
         descripcion: "Sabor mango",
         stock: 12,
         precio: "$ 1,100",
-        imagen:"/img/mango.jpg",
+        imagen:"/img/mango.png",
         categoria:"conazucar",
     },
     {
@@ -41,7 +41,7 @@ const productos = [
         descripcion: "Sabor sandia",
         stock: 9,
         precio: "$ 1,100",
-        imagen:"/img/sandiia.jpg",
+        imagen:"/img/sandiia.png",
         categoria:"sinazucar",
     },
     {
@@ -50,7 +50,7 @@ const productos = [
         descripcion: "Sabor frutos",
         stock: 29,
         precio: "$ 1,100",
-        imagen:"/img/black.jpg",
+        imagen:"/img/black.png",
         categoria:"conazucar",
     },
     {
@@ -59,17 +59,17 @@ const productos = [
         descripcion: "Sabor menta",
         stock: 10,
         precio: "$ 1,100",
-        imagen:"/img/cele.jpeg",
+        imagen:"/img/cele.png",
         categoria:"sinazucar",
     },
     {
         id: "asd136",
-        nombre: "Lewis Hamilton",
+        nombre: "Zero Suggar",
         descripcion: "Sabor melon",
         stock: 19,
         precio: "$ 1,100",
-        imagen:"/img/lewis.avif",
-        categoria:"conazucar",
+        imagen:"/img/cerozugar.png",
+        categoria:"sinazucar",
     },
     {
         id: "asd163",
@@ -77,7 +77,7 @@ const productos = [
         descripcion: "Sabor naranja",
         stock: 8,
         precio: "$ 1,100",
-        imagen:"/img/pomelo.jpg",
+        imagen:"/img/pomelo.png",
         categoria:"conazucar",
     },
     {

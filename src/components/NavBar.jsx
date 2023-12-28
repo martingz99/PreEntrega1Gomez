@@ -4,7 +4,7 @@ const NavBar = () => {
 
     return(
         
-    <nav className="navbar  navbar-expand-lg bg-danger bg-gradient ">
+    <nav className=" barra navbar  navbar-expand-lg">
         <div className="container-fluid">
             <Link to="/" className="brand">
                 <img src="/img/icon.png" alt="logo marca" />
