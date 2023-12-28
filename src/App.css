@@ -22,7 +22,7 @@ body{
 
 .brand img {
   width: auto;
-  height: 60px;
+  height: auto;
 }
 
 .navbar-nav .nav-link.active{
