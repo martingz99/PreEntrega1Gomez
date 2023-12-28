@@ -22,11 +22,11 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
     .item-list {
         /* Estilos para dispositivos móviles */
         grid-template-columns: 1fr;
-        margin-left: 150px; /* Cambia la disposición a una columna */
+        margin-left: 90px; /* Cambia la disposición a una columna */
         gap: 5px; /* Ajusta el espacio entre elementos para pantallas más pequeñas */
         /* Otros estilos específicos para móviles */
     }
