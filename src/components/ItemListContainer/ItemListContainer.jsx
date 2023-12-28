@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./ItemListContainer.css"
 import obtenerProductos from "../utilidades/data";
 import EjemploContador from "../Ejemplos/EjemploContador"
 import ItemList from "../ItemList/ItemList";
@@ -32,7 +33,13 @@ const ItemListContainer = ({ saludo }) => {
 
     return(
         <div>
-            <h3 className="saludo">{saludo}</h3>
+            {/* <h3 className="saludo saludo2">{saludo }</h3> */}
+            <div className="gen-hero">
+                <h1 className="txt">
+                Monster Energy
+                <span>Drinks</span>
+                </h1>
+            </div>
             <ItemList productos={productos}/>
             
         </div>

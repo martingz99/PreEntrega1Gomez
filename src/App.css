@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700;800&family=Teko:wght@600&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -6,20 +6,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+}
 
-#navbar {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgb(0,59,60);
-  background: linear-gradient(90deg, rgba(0,59,60,1) 4%, rgba(15,196,214,1) 28%, rgba(9,35,117,1) 64%, rgba(9,35,112,1) 78%, rgba(4,32,33,1) 91%);
+.navbar-toggler{
+  background: #6bd41a;
 }
 
 .barra{
-  background-color: #e3efe8;
-  background-image: linear-gradient(315deg, #e3efe8 0%, #96a7cf 74%);
+  background-color: black;
+  color: #fff;
 }
 
 .brand img {
@@ -27,23 +25,21 @@
   height: 60px;
 }
 
-#navbar ul li{
-  height: 70px;
-  list-style: none;
+.navbar-nav .nav-link.active{
+  color: #fff;
 }
 
-#navbar ul li a{
-  display: flex;
-  align-items: center;
-  height: 100%;
-  text-decoration: none;
-  color: white;
-  margin: 0 10px; 
-  padding: 0 15px;
+.navbar-nav .nav-link.active:hover{
+  color: #6bd41a;
 }
 
 ul li {
-  font-size: 18px;
+  font-family: "Teko SemiBold",sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 ul li a:hover{
@@ -73,7 +69,6 @@ ul li a:hover{
 }
 
 .saludo {
-  margin-top: 5px;
   color: rgb(0, 0, 0);
   font-size: 25px;
   text-align: center;
@@ -104,3 +99,4 @@ ul li a:hover{
 .button1:hover{
   background: rgb(68, 144, 230);
 }
+

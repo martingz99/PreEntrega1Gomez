@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700;800&family=Teko:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gen-hero h1{
+    color: #fff;
+    text-align: center;
+    font-family: "Teko Bold",sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    position: relative;
+    width: 100%;
+    font-weight: 600;
+}
+
+.txt span {
+    color: #6bd41a;
+}
+
+@media (max-width: 675px) {
+    .gen-hero h1 {
+        line-height: 55px;
+        font-size: 2.8rem;
+        bottom: 15%;
+}
+}
