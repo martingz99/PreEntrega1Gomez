@@ -7,7 +7,7 @@ const ItemDetail = ({ producto }) => {
             <div className="padre-card" >
                 <div className="tarjeta">
                     <img className="imgg" src={producto.imagen} alt="" />
-                    <p className="carditem text-body">{producto.nombre}</p>
+                    <p className="carditem">{producto.nombre}</p>
                     <p className="carditem">{producto.descripcion}</p>
                     <p className="carditem text-title">Precio: {producto.precio}</p>
                     <p>Stock: {producto.stock}</p>

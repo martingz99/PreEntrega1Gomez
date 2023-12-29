@@ -80,7 +80,7 @@ ul li a:hover{
 
 .price{
   font-size: 18px;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -94,6 +94,8 @@ ul li a:hover{
   background: rgb(197, 197, 197);
   color: rgb(0, 0, 0);
   border-radius: 3px;
+  padding: 5px;
+  background-color: #969595;
 }
 
 .button1:hover{
