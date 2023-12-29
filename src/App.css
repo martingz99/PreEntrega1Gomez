@@ -85,19 +85,22 @@ ul li a:hover{
 }
 
 .buttons{
-  background: rgb(146, 146, 146);
+  background: rgba(39, 21, 21, 0);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin: 20px;
 }
 
 .button1{
+  font-size: 18px;
   background: rgb(197, 197, 197);
   color: rgb(0, 0, 0);
   border-radius: 3px;
-  padding: 5px;
-  background-color: #969595;
+  padding: 8px;
+  background-color: #a6a5a5;
+  margin: 5px;
 }
 
 .button1:hover{
-  background: rgb(68, 144, 230);
+  background: #6bd41a;
 }
