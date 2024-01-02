@@ -37,7 +37,7 @@ const productos = [
     },
     {
         id: "asd133",
-        nombre: "Watermenlon",
+        nombre: "Watermelon",
         descripcion: "Sabor sandia",
         stock: 9,
         precio: "$ 1,100",

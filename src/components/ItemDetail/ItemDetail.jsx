@@ -1,6 +1,16 @@
-import EjemploContador from "../Ejemplos/EjemploContador"
+import { useState } from "react"
+import ItemCount from "../ItemCount/ItemCount"
 import "./ItemDetail.css"
 const ItemDetail = ({ producto }) => {
+
+    const [toggle, setToggle] = useState (false)
+
+    const agregarAlCarrito = (contador) => {
+        console.log(contador);
+        setToggle(true)
+        /* const productoEnCarrito = {contador, nombre: producto.nombre} */
+        /* console.log(productoEnCarrito);  */
+    }
 
     return (
         <div className="padre">
@@ -8,15 +18,18 @@ const ItemDetail = ({ producto }) => {
                 <div className="tarjeta">
                     <img className="imgg" src={producto.imagen} alt="" />
                     <p className="carditem">{producto.nombre}</p>
-                    <p className="carditem">{producto.descripcion}</p>
+                    <p className="carditem">{producto.descripcion}</p>   
                     <p className="carditem text-title">Precio: {producto.precio}</p>
-                    <p>Stock: {producto.stock}</p>
-                    <EjemploContador/>
+                    {
+                        toggle ? (
+                            <Link to="/carrito" className="button2">Terminar mi compra</Link>
+                        ) : (
+                            <ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito} />
+                        )
+                    }
                 </div>
             </div>
     </div>
     )
 }
 export default ItemDetail
-
-//clase 9 minuto 13, no me pone las imagenes ver toda la clase denuevo

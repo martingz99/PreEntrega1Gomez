@@ -1,0 +1,45 @@
+.price{
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.buttons{
+    background: rgba(39, 21, 21, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.button1{
+    font-size: 18px;
+    background: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 8px;
+    background-color: #a6a5a5;
+    margin: 5px;
+    width: 100px;
+}
+
+.button1:hover, .button2:hover {
+    background: #6bd41a;
+}
+
+.boton2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button2{
+    font-size: 18px;
+    background: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 8px;
+    background-color: #a6a5a5;
+    margin: 5px;
+}
+

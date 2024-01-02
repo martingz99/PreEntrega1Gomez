@@ -60,7 +60,7 @@ ul li a:hover{
 
 #cartwidget p {
   margin-top: 15px;
-  color: #000;
+  color: #ffffff;
 }
 
 #cartwidget img {
@@ -78,29 +78,3 @@ ul li a:hover{
   background-image: linear-gradient(315deg, #ffffff 0%, #335c81 74%);
 }
 
-.price{
-  font-size: 18px;
-  color: #ffffff;
-  text-align: center;
-}
-
-.buttons{
-  background: rgba(39, 21, 21, 0);
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
-
-.button1{
-  font-size: 18px;
-  background: rgb(197, 197, 197);
-  color: rgb(0, 0, 0);
-  border-radius: 3px;
-  padding: 8px;
-  background-color: #a6a5a5;
-  margin: 5px;
-}
-
-.button1:hover{
-  background: #6bd41a;
-}
