@@ -28,3 +28,18 @@
     width: 100px;
     height: 100px;
 } 
+
+.cart-bt{
+    text-decoration: none;
+    font-size: 18px;
+    background: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 8px;
+    background-color: #a6a5a5;
+    margin: 5px;
+}
+
+.cart-bt:hover {
+    background: #6bd41a;
+}

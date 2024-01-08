@@ -2,9 +2,12 @@
     font-size: 18px;
     color: #ffffff;
     text-align: center;
+    margin: 5px;
+    width: 10px;
 }
 
 .buttons{
+    width: 300px;
     background: rgba(39, 21, 21, 0);
     display: flex;
     justify-content: center;
@@ -19,8 +22,8 @@
     border-radius: 3px;
     padding: 8px;
     background-color: #a6a5a5;
-    margin: 5px;
-    width: 100px;
+    margin: 30px;
+    width: 80px;
 }
 
 .button1:hover, .button2:hover {

@@ -9,8 +9,6 @@ const ItemListContainer = ({ saludo }) => {
     const [productos, setProductos] = useState([]);
     const { categoria } = useParams()
 
-    console.log(categoria);
-
     useEffect(() => {
         obtenerProductos
         .then((respuesta) => {
@@ -22,10 +20,10 @@ const ItemListContainer = ({ saludo }) => {
             }
         })
         .catch((error) => {
-            console.log(error);
+
         })
         .finally(() => {
-            console.log("Finalizo");
+
         });
     }, [categoria]);
 

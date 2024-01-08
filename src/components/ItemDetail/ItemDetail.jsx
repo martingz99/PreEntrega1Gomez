@@ -1,15 +1,17 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
+import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount"
+import { CartContext } from "../../context/CartContext";
 import "./ItemDetail.css"
 const ItemDetail = ({ producto }) => {
-
     const [toggle, setToggle] = useState (false)
 
+    const { añadirProducto } = useContext(CartContext)
+
     const agregarAlCarrito = (contador) => {
-        console.log(contador);
+        const productoNuevo = {...producto, cantidad: contador}
+        añadirProducto(productoNuevo)
         setToggle(true)
-        /* const productoEnCarrito = {contador, nombre: producto.nombre} */
-        /* console.log(productoEnCarrito);  */
     }
 
     return (
@@ -20,9 +22,16 @@ const ItemDetail = ({ producto }) => {
                     <p className="carditem">{producto.nombre}</p>
                     <p className="carditem">{producto.descripcion}</p>   
                     <p className="carditem text-title">Precio: {producto.precio}</p>
-                    {
-                        toggle ? (
-                            <Link to="/carrito" className="button2">Terminar mi compra</Link>
+                        
+                        {toggle ? (
+                        <>
+                            <Link className="cart-bt" to="/carrito">
+                                Terminar mi compra
+                            </Link>
+                            <Link className="cart-bt" to="/">
+                                Seguir comprando
+                            </Link>
+                        </>
                         ) : (
                             <ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito} />
                         )
@@ -32,4 +41,4 @@ const ItemDetail = ({ producto }) => {
     </div>
     )
 }
-export default ItemDetail
+export default ItemDetail;
