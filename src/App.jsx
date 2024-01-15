@@ -4,7 +4,7 @@ import obtenerProductos from "./components/utilidades/data"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Carrito from "./components/Carrito/Carrito"
-import { CartProvider } from "./context/CartContext"
+import { CartProvider } from "./context/CartContext" 
 import './App.css'
 
 
