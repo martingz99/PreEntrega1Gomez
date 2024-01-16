@@ -1,4 +1,5 @@
 import "./Carrito.css"
+import { Link } from "react-router-dom";
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 const Carrito = () => {
@@ -20,7 +21,14 @@ const Carrito = () => {
         ))
       }
       </ul>
-      <button onClick={borrarCarrito}>Eliminar contenido</button>
+      <div className="borrar-todo" onClick={borrarCarrito}>
+        <p>Vaciar carrito</p>
+      </div>
+      
+      <Link to="/checkout">
+          Continuar con mi compra
+      </Link>
+      {/* <button onClick={borrarCarrito}>Vaciar carrito</button> */}
     </div>
   )
 }

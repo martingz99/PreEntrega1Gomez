@@ -4,3 +4,25 @@
 }
 
 
+.borrar-todo{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 2px solid rgb(87, 3, 189);
+    border-radius: 5px;
+    color: rgb(134, 68, 214);
+}
+
+.borrar-todo:hover{
+    cursor: pointer;
+    background-color: rgb(87, 3, 189);
+    color: white;
+}
+
+.borrar-todo p{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
