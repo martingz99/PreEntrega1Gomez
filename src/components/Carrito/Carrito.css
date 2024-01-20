@@ -3,7 +3,6 @@
     display: flex;
 }
 
-
 .borrar-todo{
     width: 150px;
     display: flex;
@@ -26,3 +25,17 @@
     margin-right: 10px;
 }
 
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.lista{
+    border: 2px solid rgb(112, 16, 215);
+    border-radius: 20px;
+    text-align: center;
+    color: #FFF;
+    padding: 10px;
+}

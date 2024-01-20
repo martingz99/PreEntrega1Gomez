@@ -46,7 +46,6 @@ const ItemListContainer = ({ saludo }) => {
 
     return(
         <div>
-            {/* <h3 className="saludo saludo2">{saludo }</h3> */}
             <div className="gen-hero">
                 <h1 className="txt">
                 Monster Energy

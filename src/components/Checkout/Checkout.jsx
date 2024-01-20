@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import Form from "./Form";
+import "./Form.css"
 import { CartContext } from "../../context/CartContext";
 import { addDoc, collection } from "firebase/firestore";
 import db from "../../db/db";
@@ -38,9 +39,9 @@ const Checkout = () => {
   };
 
   return (
-    <div>
+    <div className="cajacheck">
       {idOrden ? (
-        <div>
+        <div className="check">
           <h2>Orden Generada correctamente!!</h2>
           <p>N° de orden: {idOrden} </p>
         </div>

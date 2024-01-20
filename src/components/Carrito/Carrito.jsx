@@ -1,35 +1,51 @@
-import "./Carrito.css"
 import { Link } from "react-router-dom";
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
-const Carrito = () => {
+import { FaTrashAlt } from "react-icons/fa";
 
-  const { carrito, borrarCarrito, borrarProducto } = useContext(CartContext)
+import "./Carrito.css"
+
+const Carrito = () => {
+  const { carrito, borrarCarrito, borrarProducto, totalPrecio } =
+    useContext(CartContext);
+
+  if (carrito.length === 0) {
+    return (
+      <div className="carrito-vacio">
+        <h2>Ooppss el carrito esta vacio 😢</h2>
+        <Link className="button" to="/">
+          Volver al inicio
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <div>
       <ul className="cart-list">
       {
         carrito.map((producto)=>(
-          <li key={producto.id}>
+          <li key={producto.id} className="lista">
             <img src={producto.imagen} alt={producto.nombre} />
             <p>{producto.nombre}</p>
             <p>Cantidad {producto.cantidad}</p>
             <p>{producto.precio}</p>
-            <button onClick={ () => borrarProducto(producto.id) }>Eliminar producto</button>
+            <FaTrashAlt
+              className="borrar"
+              onClick={() => borrarProducto(producto.id)}
+              size={28}
+            />
           </li>
-        ))
-      }
+        ))}
       </ul>
-      <div className="borrar-todo" onClick={borrarCarrito}>
+      <div className=" inicio" onClick={borrarCarrito}>
         <p>Vaciar carrito</p>
+        <FaTrashAlt size={26} />
       </div>
-      
-      <Link to="/checkout">
-          Continuar con mi compra
+      <Link className="inicio" to="/checkout">
+        <p>Continuar con la compra</p>
       </Link>
-      {/* <button onClick={borrarCarrito}>Vaciar carrito</button> */}
     </div>
-  )
-}
-export default Carrito
+  );
+};
+export default Carrito;

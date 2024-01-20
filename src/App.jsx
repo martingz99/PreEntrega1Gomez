@@ -12,11 +12,7 @@ import './App.css'
 
 
 function App() {
-
-  
-
   return (
-
     <BrowserRouter>
       <CartProvider>
         <NavBar/>
@@ -30,7 +26,6 @@ function App() {
           </Routes> 
         </CartProvider>
     </BrowserRouter>
-
   )
 }
 
