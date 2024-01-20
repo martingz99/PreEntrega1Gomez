@@ -11,9 +11,9 @@ const Carrito = () => {
 
   if (carrito.length === 0) {
     return (
-      <div className="carrito-vacio">
-        <h2>Ooppss el carrito esta vacio 😢</h2>
-        <Link className="button" to="/">
+      <div className="">
+        <h2 className="inicio">Ooppss el carrito esta vacio 😢</h2>
+        <Link className="inicio" to="/">
           Volver al inicio
         </Link>
       </div>
