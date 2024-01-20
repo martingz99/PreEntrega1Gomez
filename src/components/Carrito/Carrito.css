@@ -26,6 +26,7 @@
 }
 
 .inicio {
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,4 +39,5 @@
     text-align: center;
     color: #FFF;
     padding: 10px;
+    margin: 10px;
 }
