@@ -1,8 +1,17 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Monster Energy!
+
+Este proyecto nace de que soy una persona la cual entrena y consumo diariamente los energizantes "Monster Energy" (lo cual no deben hacer diariamente) y seleccione los que para mi gusto son los mejores y los puse en este pequeño proyecto
+
+Installation
+Instalar mi proyecto con npm
+
+  npm install 
+  npm run dev
+  Firebase
+  React-router-dom
+  react-spinners
+  sweetalert2
+  react-icons 
