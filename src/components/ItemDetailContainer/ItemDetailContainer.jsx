@@ -7,19 +7,28 @@ import db from "../../db/db";
 const ItemDetailContainer = () => {
 
     const [producto, setProducto] = useState ({})
+    const [productoExiste, setProductoExiste] = useState(false);
     const { id } = useParams ()
 
-    useEffect(()=>{
+    useEffect(() => {
         const productoRef = doc(db, "productos", id);
         getDoc(productoRef).then((respuesta) => {
-        const productoDb = { id: respuesta.id, ...respuesta.data() };
+            const productoDb = { id: respuesta.id, ...respuesta.data() };
+    
+            if (!respuesta.exists()) {
+            setProductoExiste(true);
+        }
         setProducto(productoDb);
         });
     }, [id]);
 
     return (
-    <div>
-        <ItemDetail producto={ producto } />
+        <div>
+        {productoExiste ? (
+            <div>Producto no existente, recargue la pagina, gracias.</div>
+        ) : (
+            <ItemDetail producto={producto} />
+        )}
     </div>
 )
 }
