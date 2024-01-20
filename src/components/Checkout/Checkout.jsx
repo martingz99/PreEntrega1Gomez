@@ -1,15 +1,18 @@
 import { useContext, useState } from "react";
+import Swal from "sweetalert2"
 import Form from "./Form";
 import "./Form.css"
 import { CartContext } from "../../context/CartContext";
 import { addDoc, collection } from "firebase/firestore";
 import db from "../../db/db";
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
   const [datosForm, setDatosForm] = useState({
     nombre: "",
     telefono: "",
     email: "",
+    emailRepetido: ""
   });
   const [idOrden, setIdOrden] = useState(null);
   const { carrito, totalPrecio, borrarCarrito } = useContext(CartContext);
@@ -20,14 +23,20 @@ const Checkout = () => {
 
   const enviarOrder = (event) => {
     event.preventDefault();
-    const orden = {
-      comprador: { ...datosForm },
-      productos: [...carrito],
-      total: totalPrecio(),
-    };
+    if(datosForm.email === datosForm.emailRepetido){
+      const orden = {
+        comprador: { ...datosForm },
+        productos: [...carrito],
+        fecha: new Date(),
+        total: totalPrecio(),
+      };
 
-    subirOrden(orden);
+      subirOrden(orden);
+    }else{
+      Swal.fire("Los emails deben ser iguales")
+    }
   };
+
 
   const subirOrden = (orden) => {
     const ordenesRef = collection(db, "ordenes");

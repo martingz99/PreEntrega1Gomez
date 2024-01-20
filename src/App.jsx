@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Carrito from "./components/Carrito/Carrito"
 import { CartProvider } from "./context/CartContext" 
 import Checkout from "./components/Checkout/Checkout"
+import { useEffect } from "react"
+import Swal from "sweetalert2"
 import './App.css'
 
 
