@@ -38,6 +38,7 @@ const Carrito = () => {
           </li>
         ))}
       </ul>
+      <h3 className="inicio">Total a pagar: ${totalPrecio()}</h3>
       <div className=" inicio" onClick={borrarCarrito}>
         <p>Vaciar carrito</p>
         <FaTrashAlt size={26} />
